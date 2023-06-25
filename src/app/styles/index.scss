@@ -1,0 +1,41 @@
+@import "./reset";
+@import "./variables/global";
+@import "./themes/normal";
+@import "./themes/dark";
+@import "./themes/orange";
+
+@font-face {
+  font-family: consolas;
+  src: url("shared/assets/fonts/Consolas.ttf");
+}
+
+.app,
+.app_modal,
+.app_drawer {
+  font: var(--font-m);
+  color: var(--primary-color);
+}
+
+.app {
+  background: var(--bg-color);
+  min-height: 100vh;
+}
+
+.content-page {
+  display: flex;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;               /* wight scrollbar */
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--card-bg);        /* track colors */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--inverted-primary-color);    /* thumb colors */
+  border-radius: 20px;       /* thumb radius */
+  border: 2px solid var(--primary-color);  /* padding around thumb */
+}
